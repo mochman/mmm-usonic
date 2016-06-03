@@ -1,0 +1,67 @@
+{
+    "name": "mmm-usonic",
+    "version": "2.5.3",
+    "description": "A high performance, memory mapped, Node.js API for the HC-SR04 ultrasonic sensor connected to a Raspberry Pi.",
+    "keywords": [
+        "raspberry",
+        "pi",
+        "ultrasonic",
+        "sensor",
+        "hcsr04",
+        "gpio",
+        "mmap"
+    ],
+    "author": {
+        "name": "Clemens Akens w/ Luke Moch",
+        "email": "lukemochspam@gmail.com",
+        "url": "http://github.com/mochman"
+    },
+    "bugs": {
+        "url": "https://github.com/mochman/mmm-usonic/issues"
+    },
+    "engines": {
+        "node": ">= 0.10.0"
+    },
+    "inceptionYear": 2014,
+    "license": "MIT",
+    "main": "lib/usonic.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mochman/mmm-usonic.git"
+    },
+    "config": {
+        "mocha-cov-reporter": {
+            "failOnError": true,
+            "threshold": 0,
+            "useColors": true
+        }
+    },
+    "scripts": {
+        "install": "node-gyp configure build",
+        "test": "node_modules/.bin/grunt"
+    },
+    "dependencies": {
+        "expressive-assertion": "~1.5.1",
+        "math-statistics": "~1.2.0",
+        "nan": "latest",
+        "mmm-gpio": "latest",
+        "typesystem": "~5.0.0"
+    },
+    "devDependencies": {
+        "blanket": "latest",
+        "grunt": "latest",
+        "grunt-bumpup": "latest",
+        "grunt-cli": "latest",
+        "grunt-contrib-jshint": "latest",
+        "grunt-coveralls": "latest",
+        "grunt-jscs": "latest",
+        "grunt-mocha-test": "latest",
+        "grunt-module": "latest",
+        "load-grunt-tasks": "latest",
+        "mocha": "latest",
+        "mocha-cov-reporter": "latest",
+        "mocha-lcov-reporter": "latest",
+        "node-mock": "latest",
+        "time-grunt": "latest"
+    }
+}
