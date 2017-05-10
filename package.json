@@ -1,6 +1,6 @@
 {
     "name": "mmm-usonic",
-    "version": "2.5.3",
+    "version": "2.5.4",
     "description": "A high performance, memory mapped, Node.js API for the HC-SR04 ultrasonic sensor connected to a Raspberry Pi.",
     "keywords": [
         "raspberry",
